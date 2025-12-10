@@ -51,7 +51,7 @@
   <div class="container">
     <h1 class="text-center mb-4 fw-bold">Prova – Listas e Classes em Dart</h1>
     <p class="lead text-center text-muted">
-      Avaliação de Tópicos Especiais em Desenvolvimento de Sistemas – INFO3 – <b>04/12/2025</b>
+      Avaliação de Tópicos Especiais em Desenvolvimento de Sistemas – INFO3 – <b>10/12/2025</b>
     </p>
     <p class="lead text-center text-muted">
       Prof. Nairon Viana (nairon.viana@ifpi.edu.br)
@@ -64,14 +64,14 @@
         <h5 class="question-title">Questão 1 — Processamento de lista com for: filtragem de pares e ímpares</h5>
 
         <p>Considere a lista abaixo:</p>
-        <pre><code>List&lt;int&gt; valores = [12, 7, 3, 18, 10, 25, 2, 9, 30];</code></pre>
+        <pre><code>List&lt;int&gt; valores = [5.5, 7.5, 8.7, 9.1, 4.3];</code></pre>
 
-        <p>Usando apenas <b>for</b>, faça:</p>
+        <p>Usando a estrutura <b>for</b>, faça:</p>
         <ul>
-          <li>Crie uma nova lista contendo apenas os valores pares.</li>
-          <li>Crie outra lista contendo apenas os valores ímpares.</li>
+          <li>Crie uma nova lista contendo apenas os valores maiores que 7.0.</li>
+          <li>Crie outra lista contendo apenas os valores menores que 5.0.</li>
           <li>Mostre as duas listas separadamente.</li>
-          <li>Mostre a quantidade de pares e a quantidade de ímpares.</li>
+          <li>Mostre o tamanho de cada lista</li>
         </ul>
 
       </div>
@@ -83,18 +83,17 @@
       <div class="card-body">
         <h5 class="question-title">Questão 2 — Construção de lista com while: cadastro até "fim"</h5>
 
-        <p>Crie um programa que leia nomes do usuário e os armazene em uma lista usando um <b>while</b>.</p>
+        <p>Crie um programa que leia um número real do usuário e os armazene em uma lista usando um <b>while</b>.</p>
 
-        <p>Regra: o usuário pode digitar quantos nomes quiser, até digitar <b>"fim"</b>.</p>
+        <p>Regra: o usuário pode digitar quantos números quiser, até digitar <b>0.0</b>.</p>
 
         <ul>
-          <li>Mostre quantos nomes foram cadastrados.</li>
+          <li>Mostre quantos números foram cadastrados.</li>
           <li>Mostre a lista completa.</li>
-          <li>Mostre o primeiro e o último nome cadastrados.</li>
-          <li>Remova o primeiro nome usando <code>removeAt(0)</code> e mostre a lista atualizada.</li>
+          <li>Mostre o primeiro e o último número cadastrados.</li>
         </ul>
 
-        <p><strong>Dica:</strong> use <code>stdin.readLineSync()</code> e compare strings.</p>
+        <p><strong>Dica:</strong> use <code>stdin.readLineSync()</code> e compare números.</p>
 
       </div>
     </div>
@@ -106,19 +105,17 @@
     <h5 class="question-title">Questão 3 — Inserção e remoção em posições específicas</h5>
 
     <p>Considere a lista abaixo:</p>
-    <pre><code>List&lt;int&gt; numeros = [4, 8, 12, 16, 20, 24];</code></pre>
+    <pre><code>List&lt;int&gt; nomes = ["Pedro", "Ana", "José", "Maria", "Aline"];</code></pre>
 
     <p>Faça o que se pede usando apenas comandos já vistos em aula (<b>for</b>, <b>while</b>, <b>insert</b>, <b>removeAt</b>, <b>indexOf</b>):</p>
 
     <ul>
-      <li>Peça ao usuário um número e uma posição.</li>
+      <li>Peça ao usuário uma posição.</li>
       <li>Insira o número exatamente na posição informada usando <code>insert()</code>.</li>
       <li>Em seguida, peça ao usuário outra posição.</li>
       <li>Remova o valor que está nessa posição usando <code>removeAt()</code>.</li>
       <li>Por fim, mostre todos os elementos da lista usando um <b>for</b>.</li>
     </ul>
-
-    <p><strong>Atenção:</strong> valide se as posições informadas são válidas antes de inserir ou remover.</p>
 
   </div>
 </div>
@@ -130,27 +127,27 @@
       <div class="card-body">
         <h5 class="question-title">Questão 4 — Classes e Objetos: sistema simples de alunos</h5>
 
-        <p>Com base no exemplo da classe <code>Empregado</code> mostrado em sala, crie uma classe chamada <b>Aluno</b> contendo:</p>
+        <p>Com base no exemplo da classe <code>Empregado</code> mostrado em sala, crie uma classe chamada <b>Produto</b> contendo:</p>
 
         <ul>
           <li><code>String? nome;</code></li>
-          <li><code>int? idade;</code></li>
-          <li><code>double? nota;</code></li>
+          <li><code>int? quantidade;</code></li>
+          <li><code>double? preco;</code></li>
         </ul>
 
         <p>A classe deve possuir os métodos:</p>
 
         <ul>
-          <li><code>void aumentaNota(double x)</code> – soma x à nota.</li>
-          <li><code>void diminuiNota(double x)</code> – subtrai x da nota.</li>
-          <li><code>void mostraDados()</code> – imprime nome, idade e nota.</li>
+          <li><code>void aumentaPreco(double x)</code> – soma x ao preco.</li>
+          <li><code>void diminuiPreco(double x)</code> – subtrai x ao preco.</li>
+          <li><code>void mostraDados()</code> – imprime nome, quantidade e preco.</li>
         </ul>
 
         <p>No <code>main()</code>:</p>
         <ul>
-          <li>Crie 3 objetos <code>Aluno</code> para armazenar alunos, 1, 2, 3.</li>
-          <li>Mostre os dados de todos os alunos usando o mostraDados para cada objeto</li>
-          <li>Aumente a nota do primeiro aluno e diminua a nota do segundo.</li>
+          <li>Crie 3 objetos <code>Produto</code> para armazenar produtos, 1, 2, 3.</li>
+          <li>Mostre os dados de todos os produtos usando o mostraDados para cada objeto</li>
+          <li>Aumente o preco do primeiro produto e diminua o do segundo.</li>
           <li>Mostre novamente todos os dados.</li>
         </ul>
 
